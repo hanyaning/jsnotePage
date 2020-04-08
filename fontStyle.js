@@ -43,19 +43,19 @@ var fontList = (function(){
     function samples() {
         sample.css({ 'font-family': cfg.family, 'font-size': cfg.size + 'pt' });
         if(cfg.style === '常规'){
-          sample.css({'font-style': 'nomal','font-weight': 'nomal'});
+          sample.css({'font-weight':'normal','font-style':'normal'});
           return;
         }
         if(cfg.style === '斜体') {
-          sample.css({'font-style': 'italic','font-weight': 'nomal'});
+          sample.css({'font-weight':'normal','font-style':'italic'});
           return;
         }
         if(cfg.style === '粗体') {
-          sample.css({'font-weight': 'bold','font-style': 'nomal'});
+          sample.css({'font-weight':'bold','font-style':'normal'});
           return;
         }
         if(cfg.style === '粗偏斜体') {
-          sample.css({'font-weight': 'bold', 'font-style': 'italic'});
+          sample.css({'font-weight':'bold','font-style':'italic'});
           return;
         }
       }

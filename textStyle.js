@@ -23,20 +23,20 @@ function FontDiv(){
         selectHandler: null
     }
     function setFontStyle(item,style){
-        if(style === '常规'){
-            item.css({'font-style': 'nomal','font-weight': 'nomal'});
+        if(cfg.style === '常规'){
+            item.css({'font-weight':'normal','font-style':'normal'});
             return;
         }
         if(style === '斜体'){
-            item.css({'font-style':'italic','font-weight': 'nomal'});
+            item.css({'font-weight':'normal','font-style':'italic'});
             return;
         }
         if(style === '粗体') {
-            item.css({'font-weight':'bold','font-style': 'nomal'});
+            item.css({'font-weight':'bold','font-style':'normal'});
             return;
         }
         if(style === '粗偏斜体') {
-            item.css({'font-weight': 'bold', 'font-style': 'italic'});
+            item.css({'font-weight':'bold','font-style':'italic'});
             return;
         }
     }
