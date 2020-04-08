@@ -23,12 +23,16 @@ function FontDiv(){
         selectHandler: null
     }
     function setFontStyle(item,style){
+        if(style === '常规'){
+            item.css({'font-style': 'nomal','font-weight': 'nomal'});
+            return;
+        }
         if(style === '斜体'){
-            item.css('font-size','italic');
+            item.css({'font-style':'italic','font-weight': 'nomal'});
             return;
         }
         if(style === '粗体') {
-            item.css('font-weight', 'bold');
+            item.css({'font-weight':'bold','font-style': 'nomal'});
             return;
         }
         if(style === '粗偏斜体') {
