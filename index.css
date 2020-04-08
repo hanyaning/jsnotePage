@@ -9,7 +9,7 @@ ul,li{margin: 0;padding: 0;}
 .menu-item{display: block;height: 22px;line-height: 22px;margin-right: 1px;padding-left: 25px;position: relative;}
 .menu-item:hover{background-color: #99d1ff;height: 22px;}
 .shortcut{position: absolute;right: 20px;}
-/* .disable{color: #6d6d6d;} */
+.disable{color: #6d6d6d;}
 .disable:hover{background-color: #e6e6e6;}
 .menu-hr{border: 1px solid #d7d7d7;display: block;height: 0px;margin: 4px;margin-left: 25px;}
 .munelist .checked{position: absolute;width: 22px;height: 22px;left: 0;line-height: 22px;text-align: center;background-color: #90c8f6;}
