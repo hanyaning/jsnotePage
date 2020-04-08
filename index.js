@@ -1,0 +1,75 @@
+$(function(){
+    var menuData = [
+        {
+            title:'文件(F)',
+            menuItem:[
+                {title:'新建(N)',shortcut:'Ctrl+N',enabled:true},
+                {title:'新窗口(W)',shortcut:'Ctrl+Shift+N',enabled:true},
+                {title:'打开(O)...',shortcut:'Ctrl+O',enabled:true},
+                {title:'保存(S)',shortcut:'Ctrl+S',enabled:true},
+                {title:'另存为(A)',shortcut:'Ctrl+Shift+S',enabled:true},
+                {title:'hr',shortcut:'',enabled:true},
+                {title:'页面设置(U)',shortcut:'',enabled:true},
+                {title:'打印(P)',shortcut:'Ctrl+P',enabled:true},
+                {title:'hr',shortcut:'',enabled:true},
+                {title:'退出(X)',shortcut:'',enabled:true}
+            ],
+            width:'202px',
+            left:'0px'
+        },
+        {
+            title:'编辑(E)',
+            menuItem:[
+                {title:'撤销(U)',shortcut:'Ctrl+Z',enabled:false},
+                {title:'hr',shortcut:'',enabled:true},
+                {title:'剪切(T)',shortcut:'Ctrl+X',enabled:false},
+                {title:'复制(C)',shortcut:'Ctrl+C',enabled:false},
+                {title:'粘贴(V)',shortcut:'Ctrl+V',enabled:true},
+                {title:'删除(L)',shortcut:'Del',enabled:false},
+                {title:"hr",shortcut:'',enabled:true},
+                {title:'使用Bing搜索',shortcut:'Ctrl+E',enabled:true},
+                {title:'查找(F)...',shortcut:'Ctrl+F',enabled:true},
+                {title:'查找下一个(N)',shortcut:'F3',enabled:true},
+                {title:'查找上一个(V)',shortcut:'Shift+F3',enabled:true},
+                {title:'替换(R)...',shortcut:'Ctrl+H',enabled:true},
+                {title:'转到(G)...',shortcut:'Ctrl+G',enabled:true},
+                {title:'hr',shortcut:'',enabled:true},
+                {title:'全选(A)',shortcut:'Ctrl+A',enabled:true},
+                {title:'时间/日期(D)',shortcut:'F5',enabled:true},
+            ],
+            width:'218px',
+            left:"52px"
+        },
+        {
+            title:'格式(O)',
+            menuItem:[
+                {title:'自动换行(W)',shortcut:'',enabled:true},
+                {title:'字体(F)...',shortcut:'',enabled:true},
+            ],
+            width:'156px',
+            left:'106px'
+        },
+        {
+            title:'查看(V)',
+            menuItem:[
+                {title:'缩放(Z)',shortcut:'',enabled:true},
+                {title:'状态栏',shortcut:'',enabled:true},
+            ],
+            width: '138px',
+            left: '162px'
+        },
+        {
+            title:"帮助(H)",
+            menuItem:[
+                {title:'查看帮助(H)',shortcut:'',enabled:true},
+                {title:'发送反馈(F)',shortcut:'',enabled:true},
+                {title:'hr',shortcut:'',enabled:true},
+                {title:'关于记事本(A)',shortcut:'',enabled:true},
+            ],
+            width: '166px',
+            left: '216px'
+        }
+    ];
+    webPage.start(menuData);
+    textArea.createTextArea();
+})
